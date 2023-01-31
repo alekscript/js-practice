@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Математические операторы</h1>
+  <script>
+    a = prompt("Первое число?", 1);
+    b = prompt("Второе число?", 2);
+    alert(+a + +b); // 12
+    
+    let xy = 1;
+    xy = -xy;
+    alert(xy); // -1, применили унарный минус
+
+    let x = 1;
+    x = -x;
+    alert(x); // -1, применили унарный минус
+
+    alert(5 % 2); // 1, остаток от деления 5 на 2
+    alert(8 % 3); // 2, остаток от деления 8 на 3
+    alert(8 % 4); // 0, остаток от деления 8 на 4
+
+    alert(2 ** 2); // 2² = 4
+    alert(2 ** 3); // 2³ = 8
+    alert(2 ** 4); // 2⁴ = 16
+
+    let s = "моя" + "строка";
+    alert(s); // моястрока
+
+    alert('1' + 2); // "12"
+    alert(2 + '1'); // "21"
+
+    alert(2 + 2 + '1'); // будет "41", а не "221"
+
+    alert(6 - '2'); // 4, '2' приводится к числу
+    alert('6' / '2'); // 3, оба операнда приводятся к числам
+
+    let apples = "2";
+    let oranges = "3";
+    alert(apples + oranges); // "23", так как бинарный плюс объединяет строки
+
+    apples = "2";
+    oranges = "3";
+    // оба операнда предварительно преобразованы в числа
+    alert(+apples + +oranges); // 5
+    // более длинный вариант
+    // alert( Number(apples) + Number(oranges) ); // 5
+
+    x = 2 * 2 + 1;
+    alert(x); // 5
+
+    let a = 1;
+    let b = 2;
+
+    let c = 3 - (a = b + 1);
+
+    alert(a); // 3
+    alert(c); // 0
+
+    let n = 2;
+    n += 5; // теперь n = 7 (работает как n = n + 5)
+    n *= 2; // теперь n = 14 (работает как n = n * 2)
+    alert(n); // 14
+
+    let counter = 2;
+    counter++;        // работает как counter = counter + 1, просто запись короче
+    alert(counter); // 3
+
+    counter = 2;
+    counter--;        // работает как counter = counter - 1, просто запись короче
+    alert(counter); // 1
+  </script>
+</body>
+
+</html>
