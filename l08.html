@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Логистические операторы</title>
+</head>
+
+<body>
+  <h2>Логические операторы</h2>
+  <p>
+    В JavaScript есть четыре логических оператора: || (ИЛИ), && (И) и ! (НЕ), ?? (Оператор нулевого слияния).
+    Несмотря на своё название, данные операторы могут применяться к значениям любых типов. Полученные результаты также
+    могут иметь различный тип.
+  </p>
+
+  <h2>|| (ИЛИ)</h2>
+  <p>Оператор «ИЛИ» выглядит как двойной символ вертикальной черты:</p>
+  <script>
+    result = a || b; // a или b
+    alert(true || true);   // true
+    alert(false || true);  // true
+    alert(true || false);  // true
+    alert(false || false); // false
+  </script>
+
+  <h2>&& (И)</h2>
+  <p>
+    Оператор И пишется как два амперсанда &&:
+  </p>
+  <script>
+    alert(true && true);   // true
+    alert(false && true);  // false
+    alert(true && false);  // false
+    alert(false && false); // false
+
+    let hour = 12;
+    let minute = 30;
+
+    if (hour == 12 && minute == 30) {
+      alert('The time is 12:30');
+    }
+  </script>
+
+  <p>
+    Приоритет оператора && больше, чем у ||
+    Приоритет оператора И && больше, чем ИЛИ ||, так что он выполняется раньше.
+    Таким образом, код a && b || c && d по существу такой же, как если бы выражения && были в круглых скобках: (a && b)
+    || (c && d).
+  </p>
+
+  <h2>! (НЕ)</h2>
+  <p>Оператор НЕ представлен восклицательным знаком !.</p>
+  <script>
+    result = !value;
+  </script>
+  
+</body>
+
+</html>
