@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch Case</title>
+</head>
+
+<body>
+  <h2>Switch конструкция</h2>
+  <p>
+    Конструкция switch заменяет собой сразу несколько if.
+    Она представляет собой более наглядный способ сравнить выражение сразу с несколькими вариантами.
+    Конструкция switch имеет один или более блок case и необязательный блок default.
+    
+    let arg = prompt("Введите число?");
+    switch (arg) {
+    case '0':
+    case '1':
+    alert( 'Один или ноль' );
+    break;
+
+    case '2':
+    alert( 'Два' );
+    break;
+
+    case 3:
+    alert( 'Никогда не выполнится!' );
+    break;
+    default:
+    alert( 'Неизвестное значение' );
+    }
+  </p>
+</body>
+
+</html>
