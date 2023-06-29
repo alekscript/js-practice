@@ -37,3 +37,8 @@ let x = prompt('Vvedite X');
       return alert(result);
     }
     calcPow(x, n);
+
+  function printMyName() {
+    console.log('Aleks')
+  }
+  setTimeout(printMyName, 1000)
