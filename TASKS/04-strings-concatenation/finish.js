@@ -10,3 +10,14 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+
+const name = 'Alex'
+const surname = 'Piatopal'
+const prof = 'Web developer'
+
+let whoIs = 'Меня зовут ' + name + ' ' + surname + ' и я ' + prof
+console.log(whoIs)
+
+
+whoIS = `Меня зовут ${name} ${surname} и я ${prof}`
+console.log(whoIs)

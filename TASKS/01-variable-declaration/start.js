@@ -7,3 +7,27 @@
  *
  * 3. Выведите значение переменной в консоль
  */
+
+let a
+let b
+
+function myFn() {
+  let b
+  a = true
+  b = 10
+  console.log(a)
+}
+
+myFn()
+console.log(a)
+console.log(b)
+
+
+'use strict' //более строгий режим работы
+function myFn(){
+  a = true
+  console.log(a)
+}
+
+myFn()
+console.log(a)
