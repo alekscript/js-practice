@@ -10,3 +10,19 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+
+// Учимся писать стрелочную функцию
+setTimeout(() => {
+  console.log('Text TimeOut')
+}, 1000)
+
+// Явный возврат результата функции
+const myArrow = () => {
+  return 'Hello, world!'
+}
+console.log(myArrow())
+
+
+// Неявный возврат результата функции
+const myNewArrow = () => 'Hello,world'
+console.log(myNewArrow())
