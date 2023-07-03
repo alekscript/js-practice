@@ -12,3 +12,18 @@
  *
  * 4. Вызовите функцию
  */
+
+
+
+
+/**
+ * 
+ * @param {number} a 
+ * @param {number} b 
+ * @returns 'Разница чисел'
+ */
+
+const myFunction = (a=0,b=0) => a - b
+
+console.table(myFunction(5,4))
+console.table(myFunction())

@@ -80,6 +80,24 @@
     при этом необходимо явно вызывать return, чтобы вернуть значение.
   </p>
 
+  <script>
+    const newPost = (post, date = Date()) => {
+  let test = {
+    ...post,
+    date,
+  }
+  return test
+}
+
+const firstPost = {
+  id: 1,
+  author: 'Alex',
+}
+
+newPost(firstPost)
+
+console.table(newPost(firstPost))
+  </script>
 
 </body>
 
