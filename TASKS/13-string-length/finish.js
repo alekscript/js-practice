@@ -4,3 +4,8 @@
  *
  * 2. Виведите в консоль длину этой строки
  */
+
+
+const myStr = 'Alex buy a beautiful t-shirt'
+
+console.log(myStr.length)

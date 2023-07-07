@@ -4,3 +4,6 @@
  *
  * 2. Выведите значение в консоль
  */
+
+const date = Date()
+console.log(date)
