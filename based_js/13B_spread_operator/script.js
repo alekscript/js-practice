@@ -8,11 +8,11 @@ a = b + 5;
 console.log(a);
 console.log(b);
 
-const obj = {
+const obj = { 
   a: 5,
   b: 1,
 };
-
+// testsss
 const copy = obj; // передает ссылку на объем - то есть его адрес в памяти.
 
 copy.a = 10;
