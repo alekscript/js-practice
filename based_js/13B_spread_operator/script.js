@@ -15,7 +15,7 @@ const obj = {
 // testsss
 const copy =  obj; // передает ссылку на объем - то есть его адрес в памяти.
 
-copy.a = 10;
+copy.a = 10 ;
 
 console.log(copy);
 console.log(obj);
